@@ -1,0 +1,126 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Estilos do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+input, select, button {
+    padding: 12px 9px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilos do resumo de gastos */
+.resumo-gastos {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.resumo-gastos p {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-gastos p:last-child {
+    border-bottom: none;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2c3e50;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px dashed #ccc !important;
+}
+
+/* Cores específicas para cada categoria */
+#Alimentacao {
+    color: #090909;
+}
+
+#Transporte {
+    color: #090909;
+}
+
+#Lazer {
+    color: #090909;
+}
+
+#Outros {
+    color: #090909;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    form {
+        flex-direction: row;
+    }
+    
+    input, select, button {
+        flex: 1;
+    }
+    
+    button {
+        flex: 0.5;
+    }
+}
